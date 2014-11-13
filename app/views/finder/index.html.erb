@@ -1,0 +1,10 @@
+<h1>All Customers</h1>
+
+<div class="navigation_links">
+  <%= link_to 'New Customer', new_customer_path %> -
+  <%= link_to 'Missing Emails', missing_emails_path %>
+</div>
+
+<%= render @customers %>
+
+<br>
