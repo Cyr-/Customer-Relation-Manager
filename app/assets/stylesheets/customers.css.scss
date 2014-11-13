@@ -1,0 +1,42 @@
+// Place all the styles related to the Customers controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.navigation_links{
+  display: block;
+
+  a{
+    display: inline;
+  }
+}
+
+.customer{
+  background-color: #FFFFFF;
+  border: 1px solid #999999;
+  float: left;
+  width: 250px;
+  height: 400px;
+  margin: 10px 10px 0px 0px;
+  padding: 10px;
+  box-shadow: 1px 1px 1px #5F515F;
+
+  .customer_links{
+    float: right;
+
+    a{
+      color: #888888;
+      display: inline;
+    }
+  }
+
+  h2{
+    color: #333333;
+  }
+
+  .email{
+    text-decoration: underline;
+  }
+}
+
+body{
+  margin: 10px;
+}

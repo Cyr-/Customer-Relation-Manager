@@ -1,0 +1,33 @@
+<div class="customer">
+
+  <div class="customer_links">
+    <%= link_to 'edit', edit_customer_path(customer) %>
+    <%= link_to 'x', customer, method: :delete, data: { confirm: 'Are you sure?' } %>
+  </div>
+
+  <h2>
+    <%=customer.full_name%>
+  </h2>
+
+  <% if customer.image.present? %>
+    <%= image_tag customer.image %>
+  <% end %>
+
+  <% if customer.phone_number.present? %>
+    <p>
+      <strong>Phone:</strong> <%= customer.phone_number %>
+    </p>
+  <% end %>
+
+  <% if customer.email_address.present? %>
+    <p>
+      <strong>Email:</strong> <%= mail_to customer.email_address %>
+    </p>
+  <% end %>
+
+  <% if customer.notes.present? %>
+    <p>
+      <strong>Notes:</strong> <%= customer.notes %>
+    </p>
+  <% end %>
+</div>
