@@ -15,6 +15,16 @@
   <%= @customer.email_address %>
 </p>
 
+<% if @customer.province_id.present? %>
+  <p>
+    <strong>Province:</strong> <%= @customer.province.name %>
+  </p>
+<% else %>
+  <p>
+    <strong>Province:</strong> None
+  </p>
+<% end %>
+
 <p>
   <strong>Image:</strong>
   <%= @customer.image %>
@@ -26,4 +36,4 @@
 </p>
 
 <%= link_to 'Edit', edit_customer_path(@customer) %> |
-<%= link_to 'Back', customers_path %>
+<%= link_to 'Back', root_path %>
